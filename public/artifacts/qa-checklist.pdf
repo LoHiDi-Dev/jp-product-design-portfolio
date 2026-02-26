@@ -1,0 +1,282 @@
+%PDF-1.3
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 6 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/Contents 12 0 R /MediaBox [ 0 0 612 792 ] /Parent 11 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/BaseFont /ZapfDingbats /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+7 0 obj
+<<
+/Contents 13 0 R /MediaBox [ 0 0 612 792 ] /Parent 11 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Contents 14 0 R /MediaBox [ 0 0 612 792 ] /Parent 11 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/PageMode /UseNone /Pages 11 0 R /Type /Catalog
+>>
+endobj
+10 0 obj
+<<
+/Author () /CreationDate (D:20260216014547-06'00') /Creator (anonymous) /Keywords () /ModDate (D:20260216014547-06'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (unspecified) /Title (Release Readiness Checklist) /Trapped /False
+>>
+endobj
+11 0 obj
+<<
+/Count 3 /Kids [ 5 0 R 7 0 R 8 0 R ] /Type /Pages
+>>
+endobj
+12 0 obj
+<<
+/Length 2781
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+BT /F2 18 Tf 21.6 TL ET
+BT 1 0 0 1 72 720 Tm (Release Readiness Checklist) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+.4 .4 .4 rg
+BT 1 0 0 1 72 698 Tm (Version 2.1 \177 Feb 2026) Tj T* ET
+0 0 0 rg
+BT /F2 11 Tf 13.2 TL ET
+BT 1 0 0 1 72 670 Tm (Critical Flows \227 Smoke Test) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 90 652 Tm ([x]) Tj T* ET
+BT 1 0 0 1 110 652 Tm (Login flow \(email + password, SSO\)) Tj T* ET
+BT 1 0 0 1 90 636 Tm ([x]) Tj T* ET
+BT 1 0 0 1 110 636 Tm (Primary user dashboard load) Tj T* ET
+BT 1 0 0 1 90 620 Tm ([x]) Tj T* ET
+BT 1 0 0 1 110 620 Tm (Checkout flow \(end-to-end\)) Tj T* ET
+BT 1 0 0 1 90 604 Tm ([x]) Tj T* ET
+BT 1 0 0 1 110 604 Tm (Error state handling \(400, 500, timeout\)) Tj T* ET
+BT 1 0 0 1 90 588 Tm ([ ]) Tj T* ET
+BT 1 0 0 1 110 588 Tm (Payment confirmation flow) Tj T* ET
+BT /F2 11 Tf 13.2 TL ET
+BT 1 0 0 1 72 564 Tm (Cross-Browser Validation) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 90 546 Tm ([x]) Tj T* ET
+BT 1 0 0 1 110 546 Tm (Chrome \(latest stable\)) Tj T* ET
+BT 1 0 0 1 90 530 Tm ([x]) Tj T* ET
+BT 1 0 0 1 110 530 Tm (Safari \(macOS + iOS\)) Tj T* ET
+BT 1 0 0 1 90 514 Tm ([x]) Tj T* ET
+BT 1 0 0 1 110 514 Tm (Edge \(Windows\)) Tj T* ET
+BT 1 0 0 1 90 498 Tm ([ ]) Tj T* ET
+BT 1 0 0 1 110 498 Tm (Firefox \(latest stable\)) Tj T* ET
+BT /F2 11 Tf 13.2 TL ET
+BT 1 0 0 1 72 474 Tm (Accessibility Checks) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 90 456 Tm ([x]) Tj T* ET
+BT 1 0 0 1 110 456 Tm (Keyboard navigation \(Tab, Enter, Escape\)) Tj T* ET
+BT 1 0 0 1 90 440 Tm ([x]) Tj T* ET
+BT 1 0 0 1 110 440 Tm (Focus indicators visible) Tj T* ET
+BT 1 0 0 1 90 424 Tm ([x]) Tj T* ET
+BT 1 0 0 1 110 424 Tm (Color contrast minimum 4.5:1) Tj T* ET
+BT 1 0 0 1 90 408 Tm ([ ]) Tj T* ET
+BT 1 0 0 1 110 408 Tm (Screen reader testing \(NVDA/VoiceOver\)) Tj T* ET
+BT 1 0 0 1 90 392 Tm ([ ]) Tj T* ET
+BT 1 0 0 1 110 392 Tm (Alt text for images) Tj T* ET
+BT /F2 11 Tf 13.2 TL ET
+BT 1 0 0 1 72 368 Tm (Performance Budget) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 72 350 Tm (Lighthouse Performance) Tj T* ET
+BT 1 0 0 1 400 350 Tm (> 90) Tj T* ET
+BT 1 0 0 1 72 336 Tm (First Contentful Paint) Tj T* ET
+BT 1 0 0 1 400 336 Tm (< 1.8s) Tj T* ET
+BT 1 0 0 1 72 322 Tm (Largest Contentful Paint) Tj T* ET
+BT 1 0 0 1 400 322 Tm (< 2.5s) Tj T* ET
+BT 1 0 0 1 72 308 Tm (Cumulative Layout Shift) Tj T* ET
+BT 1 0 0 1 400 308 Tm (< 0.1) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 72 284 Tm (QA Lead: _______________________) Tj T* ET
+BT 1 0 0 1 72 268 Tm (Product Owner: _______________________) Tj T* ET
+BT 1 0 0 1 72 252 Tm (Engineering Lead: _______________________) Tj T* ET
+BT /F3 9 Tf 10.8 TL ET
+.45 .45 .45 rg
+BT 1 0 0 1 72 224 Tm (This is a sanitized demo showcasing interaction patterns and state handling.) Tj T* ET
+0 0 0 rg
+ 
+endstream
+endobj
+13 0 obj
+<<
+/Length 2480
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+BT /F2 14 Tf 16.8 TL ET
+BT 1 0 0 1 72 720 Tm (What this checklist covers) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 90 696 Tm (\177) Tj T* ET
+BT 1 0 0 1 105 696 Tm (Acceptance criteria + Definition of Done) Tj T* ET
+BT 1 0 0 1 90 678 Tm (\177) Tj T* ET
+BT 1 0 0 1 105 678 Tm (Critical flows smoke test \(desktop + mobile\)) Tj T* ET
+BT 1 0 0 1 90 660 Tm (\177) Tj T* ET
+BT 1 0 0 1 105 660 Tm (Cross-browser validation \(Chrome / Safari / Edge\)) Tj T* ET
+BT 1 0 0 1 90 642 Tm (\177) Tj T* ET
+BT 1 0 0 1 105 642 Tm (Accessibility checks \(keyboard, focus, contrast\)) Tj T* ET
+BT 1 0 0 1 90 624 Tm (\177) Tj T* ET
+BT 1 0 0 1 105 624 Tm (Performance budget \(Lighthouse targets\)) Tj T* ET
+BT 1 0 0 1 90 606 Tm (\177) Tj T* ET
+BT 1 0 0 1 105 606 Tm (Analytics + error monitoring validation) Tj T* ET
+BT 1 0 0 1 90 588 Tm (\177) Tj T* ET
+BT 1 0 0 1 105 588 Tm (Bug severity + triage rules) Tj T* ET
+BT 1 0 0 1 90 570 Tm (\177) Tj T* ET
+BT 1 0 0 1 105 570 Tm (Release sign-off + rollback notes) Tj T* ET
+BT /F2 14 Tf 16.8 TL ET
+BT 1 0 0 1 72 536 Tm (Release gates) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 90 512 Tm /F4 10 Tf 12 TL (3) Tj /F1 10 Tf 12 TL T* ET
+BT 1 0 0 1 105 512 Tm (Must-pass: Accessibility) Tj T* ET
+BT 1 0 0 1 90 494 Tm /F4 10 Tf 12 TL (3) Tj /F1 10 Tf 12 TL T* ET
+BT 1 0 0 1 105 494 Tm (Must-pass: Critical flows) Tj T* ET
+BT 1 0 0 1 90 476 Tm /F4 10 Tf 12 TL (3) Tj /F1 10 Tf 12 TL T* ET
+BT 1 0 0 1 105 476 Tm (Must-pass: Performance budget) Tj T* ET
+BT 1 0 0 1 90 458 Tm /F4 10 Tf 12 TL (3) Tj /F1 10 Tf 12 TL T* ET
+BT 1 0 0 1 105 458 Tm (Must-pass: Cross-browser) Tj T* ET
+BT 1 0 0 1 90 440 Tm /F4 10 Tf 12 TL (3) Tj /F1 10 Tf 12 TL T* ET
+BT 1 0 0 1 105 440 Tm (Must-pass: Analytics events) Tj T* ET
+BT /F2 14 Tf 16.8 TL ET
+BT 1 0 0 1 72 406 Tm (Severity rubric) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT /F2 10 Tf 12 TL ET
+BT 1 0 0 1 72 382 Tm (Blocker \227) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 127.46 382 Tm (Prevents release or breaks critical flow) Tj T* ET
+BT /F2 10 Tf 12 TL ET
+BT 1 0 0 1 72 362 Tm (High \227) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 113 362 Tm (Major impact on user experience) Tj T* ET
+BT /F2 10 Tf 12 TL ET
+BT 1 0 0 1 72 342 Tm (Medium \227) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 128.56 342 Tm (Noticeable issue, has workaround) Tj T* ET
+BT /F2 10 Tf 12 TL ET
+BT 1 0 0 1 72 322 Tm (Low \227) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 110.78 322 Tm (Minor cosmetic or edge case) Tj T* ET
+ 
+endstream
+endobj
+14 0 obj
+<<
+/Length 2545
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+BT /F2 14 Tf 16.8 TL ET
+BT 1 0 0 1 72 720 Tm (Planned artifacts) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT /F2 10 Tf 12 TL ET
+BT 1 0 0 1 72 692 Tm (UAT Script Sample) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 72 678 Tm (User acceptance testing scenarios with validation criteria and expected outcomes.) Tj T* ET
+BT /F2 10 Tf 12 TL ET
+BT 1 0 0 1 72 656 Tm (Bug Triage Workflow) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 72 642 Tm (Severity classification, escalation paths, and resolution tracking framework.) Tj T* ET
+BT /F2 10 Tf 12 TL ET
+BT 1 0 0 1 72 620 Tm (Accessibility Validation Notes) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 72 606 Tm (WCAG compliance checklist with keyboard navigation and screen reader testing.) Tj T* ET
+BT /F2 12 Tf 14.4 TL ET
+BT 1 0 0 1 72 564 Tm (Notes) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 72 544 Tm (______________________________________________________________________) Tj T* ET
+BT 1 0 0 1 72 526 Tm (______________________________________________________________________) Tj T* ET
+BT 1 0 0 1 72 508 Tm (______________________________________________________________________) Tj T* ET
+BT 1 0 0 1 72 490 Tm (______________________________________________________________________) Tj T* ET
+BT 1 0 0 1 72 472 Tm (______________________________________________________________________) Tj T* ET
+BT 1 0 0 1 72 454 Tm (______________________________________________________________________) Tj T* ET
+BT 1 0 0 1 72 436 Tm (______________________________________________________________________) Tj T* ET
+BT 1 0 0 1 72 418 Tm (______________________________________________________________________) Tj T* ET
+BT 1 0 0 1 72 400 Tm (______________________________________________________________________) Tj T* ET
+BT 1 0 0 1 72 382 Tm (______________________________________________________________________) Tj T* ET
+BT 1 0 0 1 72 364 Tm (______________________________________________________________________) Tj T* ET
+BT 1 0 0 1 72 346 Tm (______________________________________________________________________) Tj T* ET
+BT /F2 12 Tf 14.4 TL ET
+BT 1 0 0 1 72 304 Tm (Document control) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 72 286 Tm (This checklist is sanitized for portfolio use. Replace with your full release checklist for production.) Tj T* ET
+BT 1 0 0 1 72 270 Tm (Last updated: Feb 2026. Version 2.1.) Tj T* ET
+BT /F1 9 Tf 10.8 TL ET
+.45 .45 .45 rg
+BT 1 0 0 1 72 246 Tm (This is a sanitized demo showcasing interaction patterns and state handling.) Tj T* ET
+0 0 0 rg
+ 
+endstream
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000000061 00000 n 
+0000000122 00000 n 
+0000000229 00000 n 
+0000000341 00000 n 
+0000000456 00000 n 
+0000000651 00000 n 
+0000000734 00000 n 
+0000000929 00000 n 
+0000001124 00000 n 
+0000001193 00000 n 
+0000001465 00000 n 
+0000001537 00000 n 
+0000004370 00000 n 
+0000006902 00000 n 
+trailer
+<<
+/ID 
+[<b83fb9f2e9c23c98ac489a91dd1b9535><b83fb9f2e9c23c98ac489a91dd1b9535>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 10 0 R
+/Root 9 0 R
+/Size 15
+>>
+startxref
+9499
+%%EOF
