@@ -76,7 +76,7 @@ export const CASE_STUDY_TECH_STACK: Record<string, TechStackEntry> = {
     'Accessibility + QA',
     'WCAG 2.1 AA - legibility at small sizes, contrast, and readable hierarchy for homepage direction',
     'Build (planned)',
-    'React + TypeScript + Tailwind - planned full-stack implementation (not yet built)',
+    'React + TypeScript + Tailwind - planned implementation (not yet built)',
   ],
 };
 

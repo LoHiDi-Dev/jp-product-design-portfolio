@@ -29,7 +29,7 @@ export type ProofItem = {
 };
 
 /**
- * Engineering Proof items.
+ * Design & implementation artifact items.
  *
  * NOTE: Add your public GitHub URLs here.
  * Example repoUrl: https://github.com/<your-username>/<repo>

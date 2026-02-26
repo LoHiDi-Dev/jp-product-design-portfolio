@@ -26,7 +26,7 @@ export default function CvsCaseStudy() {
         'Brand/legal stakeholder review cycles',
       ],
       role: '',
-      roleTitle: 'Senior Product Designer / UX Strategist',
+      roleTitle: 'Senior UX Strategist / Product Designer (Medicare)',
       roleScope:
         'Led research synthesis, flow strategy, and interaction design within a regulated compliance environment.',
       roleResponsibilities: [
@@ -103,17 +103,33 @@ export default function CvsCaseStudy() {
           </Link>
 
           <h1 className="text-3xl md:text-4xl font-medium mb-3">
-            CVS/Aetna Medicare Enrollment Experience
+            CVS Health / Aetna &mdash; Medicare Enrollment Experience
           </h1>
           <p className="text-xl text-muted-foreground w-full max-w-none">
-            Plan shopping + comparison + enrollment • Accessibility for older adults (65+) •
+            Plan shopping + comparison + enrollment &bull; Accessibility for older adults (65+) &bull;
             Desktop + Mobile
+          </p>
+          <p className="text-sm text-muted-foreground mt-2">
+            Oct 2019 &ndash; Jul 2021
           </p>
           <p className="text-sm text-muted-foreground mt-4 w-full max-w-none">
             This case study highlights selected workflows and design decisions from the Medicare
             enrollment experience work.
           </p>
         </header>
+
+        {/* Executive Snapshot */}
+        <section className="mb-12 bg-muted/30 border border-border rounded-2xl p-8">
+          <h2 className="text-lg font-medium mb-4">Executive Snapshot</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+            <div><span className="font-medium text-primary">Role:</span> Senior UX Strategist / Product Designer (Medicare)</div>
+            <div><span className="font-medium text-primary">Platform:</span> Web (desktop + mobile)</div>
+            <div><span className="font-medium text-primary">Scope:</span> Plan shopping, comparison, enrollment UX for adults 65+</div>
+            <div><span className="font-medium text-primary">Team:</span> Product Design, Research, Engineering, Compliance/Legal</div>
+            <div className="md:col-span-2 lg:col-span-3"><span className="font-medium text-primary">Problem:</span> Medicare plan shopping and enrollment is high-stakes and highly regulated. Older adults need clear guidance, readable comparisons, and accessible patterns.</div>
+            <div className="md:col-span-2 lg:col-span-3"><span className="font-medium text-primary">Outcomes:</span> Clearer plan shopping experience, stronger accessibility baseline, improved desktop/mobile consistency.</div>
+          </div>
+        </section>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-16">

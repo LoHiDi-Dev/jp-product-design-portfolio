@@ -1,5 +1,5 @@
 /**
- * Canonical taxonomy for Work + Proof filters.
+ * Canonical taxonomy for Work + Artifacts filters.
  * Single source of truth. Only used values are shown (derived from project data).
  * Synonyms normalize legacy tags for matching without breaking existing data.
  */

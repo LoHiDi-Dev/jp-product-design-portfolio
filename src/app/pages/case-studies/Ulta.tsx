@@ -24,7 +24,7 @@ export default function UltaCaseStudy() {
       'Accessibility expectations increasing across critical journeys',
     ],
     role: '',
-    roleTitle: 'Senior Product Designer / UX Architect',
+    roleTitle: 'Senior Product Designer',
     roleScope:
       'Led design system migration and journey UX optimization, partnering with engineering for implementation readiness.',
     roleResponsibilities: [
@@ -95,17 +95,33 @@ export default function UltaCaseStudy() {
             Back to Selected Work
           </Link>
           <h1 className="text-3xl md:text-4xl font-medium mb-3">
-            Ulta Beauty E-commerce & Loyalty
+            Ulta Beauty &mdash; E-commerce &amp; Loyalty
           </h1>
           <p className="text-xl text-muted-foreground w-full max-w-none">
-            Design system migration (Sketch → Figma) • E-commerce + loyalty journeys • Accessibility
+            Design system migration (Sketch &rarr; Figma) &bull; E-commerce + loyalty journeys &bull; Accessibility
             + delivery consistency
+          </p>
+          <p className="text-sm text-muted-foreground mt-2">
+            Oct 2022 &ndash; Sep 2025
           </p>
           <p className="text-sm text-muted-foreground mt-4 w-full max-w-none">
             This case study highlights selected workflows and design decisions from the e-commerce
             design system migration.
           </p>
         </header>
+
+        {/* Executive Snapshot */}
+        <section className="mb-12 bg-muted/30 border border-border rounded-2xl p-8">
+          <h2 className="text-lg font-medium mb-4">Executive Snapshot</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+            <div><span className="font-medium text-primary">Role:</span> Senior Product Designer</div>
+            <div><span className="font-medium text-primary">Platform:</span> Web (desktop + mobile), cross-platform</div>
+            <div><span className="font-medium text-primary">Scope:</span> Design system migration, e-commerce journey optimization, accessibility</div>
+            <div><span className="font-medium text-primary">Team:</span> Product Design, Engineering, Brand, QA</div>
+            <div className="md:col-span-2 lg:col-span-3"><span className="font-medium text-primary">Problem:</span> Fragmented UI patterns and a legacy Sketch library that had become difficult to scale, creating inconsistent navigation and increasing handoff friction.</div>
+            <div className="md:col-span-2 lg:col-span-3"><span className="font-medium text-primary">Outcomes:</span> Improved cross-team consistency, clearer navigation and hierarchy, accessibility-minded patterns in critical flows.</div>
+          </div>
+        </section>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-16">

@@ -18,7 +18,7 @@ export default function AmericanAirlinesCaseStudy() {
 
   const snapshot = {
     problem:
-      'Post-merger, customers could start key flows in the legacy US Airways experience and complete them in American Airlines (e.g., confirmation/PNR in a different UI), causing inconsistency and reliability issues.',
+      'Post-merger, customers could start key flows in the legacy US Airways experience and complete them in American Airlines (e.g., confirmation/PNR in a different UI), causing inconsistency, confusion, and drop-off.',
     users:
       'Travelers on desktop + mobile, loyalty members, and customers completing high-intent tasks (booking, check-in, trip management).',
     constraints: [
@@ -28,67 +28,62 @@ export default function AmericanAirlinesCaseStudy() {
       'Accessibility expectations across devices and assistive tech',
     ],
     role: '',
-    roleTitle: 'Senior Software Engineer / User Interface',
+    roleTitle: 'Senior Information Architect (UX) / Information Designer',
     roleScope:
-      'Partnered with UX/IA and interaction design to unify post-merger journeys and standardize UI + platform behavior.',
+      'Led IA strategy and interaction design for post-merger journey unification, partnering with UX, engineering, and brand teams.',
     roleResponsibilities: [
-      'Implemented shared UI patterns and routing behavior to eliminate cross-system journey breaks (start in US Airways, finish in American Airlines).',
-      'Hardened reliability and edge-case handling for high-traffic booking and account flows (loading, error states, recovery paths).',
-      'Aligned engineering delivery with UX via acceptance criteria, UI state mapping, and reusable component conventions to reduce drift across teams.',
+      'Defined unified navigation hierarchy, page structure, and labeling conventions to eliminate cross-system journey breaks (US Airways → American Airlines).',
+      'Created wireframes, interaction specs, and IA documentation to align UX, engineering, and brand stakeholders.',
+      'Authored acceptance criteria and interaction requirements for high-traffic booking and account flows.',
     ],
     outcomes: [
-      'Unified navigation and UI foundation post-merger',
+      'Unified navigation and IA foundation post-merger',
       'Improved performance hygiene and core vitals on high-traffic surfaces',
-      'Stronger API integration reliability and defensive UI states',
+      'Reduced user confusion and drop-off across post-merger journeys',
     ],
   };
 
   const goals = [
-    'Align on a unified structure',
-    'Modernize front-end delivery',
-    'Improve performance',
-    'Strengthen API integration reliability for high-traffic journeys',
+    'Unify two legacy site structures into a single navigation model',
+    'Define clear IA conventions and interaction patterns post-merger',
+    'Improve usability and accessibility across high-traffic journeys',
+    'Deliver wireframes, flows, and specs that align UX + engineering',
   ];
 
   const approachCards = [
     {
       title: 'Discovery & Inputs',
       description:
-        'Airport-context interviews to understand traveler needs when time-constrained (clarity, speed, predictability).',
+        'Airport-context interviews and analytics review to understand traveler needs when time-constrained (clarity, speed, predictability).',
     },
     {
-      title: 'Exploration / Design Work',
+      title: 'IA Strategy & Navigation Design',
       description:
-        'Mapped and merged two site structures into one navigation model with clearer labels and predictable pathways.',
+        'Mapped and merged two site structures into one navigation model with clearer labels, predictable pathways, and consistent entry points.',
+    },
+    {
+      title: 'Wireframes & Interaction Specs',
+      description:
+        'Created wireframes for desktop and mobile that defined page hierarchy, interaction patterns, and state behaviors for key journeys.',
     },
     {
       title: 'Validation & Accessibility',
       description:
-        'Fewer integration edge cases, clearer error states, and performance hygiene for high-traffic surfaces.',
+        'Validated IA decisions through usability testing and ensured accessibility fundamentals across critical flow steps.',
     },
     {
-      title: 'Handoff / Implementation Readiness',
+      title: 'Handoff & Implementation Readiness',
       description:
-        'Translated design decisions into reusable UI components and implementation conventions.',
-    },
-    {
-      title: 'Engineering Approach',
-      description: '',
-      bullets: [
-        'Unification strategy: shared UI patterns and routing alignment; incremental rollout to avoid big-bang risk.',
-        'Consistent state model: loading, error, empty, recovery; shared validation rules.',
-        'Integration reliability: defensive UI, API edge-case handling, retries/timeouts.',
-        'Delivery discipline: CI checks, code quality gates, automated tests for critical flows.',
-      ],
+        'Authored interaction specs, acceptance criteria, and IA documentation to support engineering delivery with minimal ambiguity.',
     },
   ];
 
   const whatChanged = [
     'Unified navigation hierarchy with clearer grouping and labels.',
-    'Standardized shared components and patterns to reduce drift and accelerate delivery.',
-    'Improved reliability and performance hygiene across high-traffic flows.',
-    'Stronger API integration and defensive UI states.',
-    'Strengthened automated regression coverage for critical booking and account flows.',
+    'Defined shared interaction patterns and IA conventions to reduce drift across teams.',
+    'Authored wireframes and interaction specs for desktop and mobile.',
+    'Delivered acceptance criteria and IA documentation for engineering handoff.',
+    'Strengthened accessibility baseline across critical booking and account flows.',
   ];
 
   const mediaImgProps = {
@@ -110,17 +105,31 @@ export default function AmericanAirlinesCaseStudy() {
             Back to Selected Work
           </Link>
           <h1 className="text-3xl md:text-4xl font-medium mb-3">
-            American Airlines Digital Journeys
+            American Airlines &mdash; Digital Journeys
           </h1>
           <p className="text-xl text-muted-foreground w-full max-w-none">
-            Post-merger unification (US Airways → American Airlines) • Unified brand + scalable
-            front-end platform • Performance + integration reliability
+            Post-merger IA unification (US Airways &rarr; American Airlines) &bull; Navigation design &bull; Wireframes &amp; interaction specs
+          </p>
+          <p className="text-sm text-muted-foreground mt-2">
+            Feb 2014 &ndash; Aug 2019
           </p>
           <p className="text-sm text-muted-foreground mt-4 w-full max-w-none">
-            This case study highlights selected workflows and engineering decisions from post-merger
-            journey unification work.
+            This case study highlights selected IA deliverables and design decisions from post-merger journey unification work.
           </p>
         </header>
+
+        {/* Executive Snapshot */}
+        <section className="mb-12 bg-muted/30 border border-border rounded-2xl p-8">
+          <h2 className="text-lg font-medium mb-4">Executive Snapshot</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+            <div><span className="font-medium text-primary">Role:</span> Senior Information Architect (UX) / Information Designer</div>
+            <div><span className="font-medium text-primary">Platform:</span> Web (desktop + mobile)</div>
+            <div><span className="font-medium text-primary">Scope:</span> Post-merger journey unification, IA strategy, navigation design</div>
+            <div><span className="font-medium text-primary">Team:</span> UX/IA, Visual Design, Engineering, Brand/Marketing</div>
+            <div className="md:col-span-2 lg:col-span-3"><span className="font-medium text-primary">Problem:</span> Two legacy site structures created inconsistent, fragmented journeys post-merger.</div>
+            <div className="md:col-span-2 lg:col-span-3"><span className="font-medium text-primary">Outcomes:</span> Unified navigation model, clearer IA conventions, improved usability and performance across high-traffic surfaces.</div>
+          </div>
+        </section>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-16">
@@ -131,7 +140,7 @@ export default function AmericanAirlinesCaseStudy() {
                 <ul className="space-y-3">
                   {goals.map((item) => (
                     <li key={item} className="flex gap-3">
-                      <span className="text-primary mt-1">•</span>
+                      <span className="text-primary mt-1">&bull;</span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -150,18 +159,7 @@ export default function AmericanAirlinesCaseStudy() {
                     className="bg-card border border-border rounded-2xl p-8"
                   >
                     <h3 className="font-medium mb-4">{card.title}</h3>
-                    {'bullets' in card && card.bullets ? (
-                      <ul className="space-y-2 text-muted-foreground">
-                        {card.bullets.map((b) => (
-                          <li key={b} className="flex gap-2">
-                            <span className="text-primary shrink-0">•</span>
-                            <span>{b}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p className="text-muted-foreground">{card.description}</p>
-                    )}
+                    <p className="text-muted-foreground">{card.description}</p>
                   </div>
                 ))}
               </div>
@@ -170,7 +168,7 @@ export default function AmericanAirlinesCaseStudy() {
             {/* 3) Solution / Key Screens */}
             <section>
               <h2 className="text-2xl font-medium mb-6 w-full max-w-none">
-                Solution / Key Screens
+                Key Deliverables
               </h2>
 
               <div className="space-y-12">
@@ -209,7 +207,7 @@ export default function AmericanAirlinesCaseStudy() {
                   }
                   />
                   <p className="text-sm text-muted-foreground mt-4 w-full">
-                    Two different navigation models and UI patterns created inconsistent entry points
+                    Two different navigation models and IA patterns created inconsistent entry points
                     into core journeys post-merger.
                   </p>
                 </div>
@@ -255,7 +253,7 @@ export default function AmericanAirlinesCaseStudy() {
 
                 {/* Unified Planning */}
                 <div>
-                  <h3 className="font-medium mb-3">Unified Planning</h3>
+                  <h3 className="font-medium mb-3">Wireframes &amp; Unified Planning</h3>
                   <p className="text-sm text-muted-foreground mb-4 w-full">
                     Wireframes aligned IA, UX, and engineering on a unified structure and interaction
                     model before implementation.
@@ -274,8 +272,8 @@ export default function AmericanAirlinesCaseStudy() {
                     onBeforeClick={() =>
                     setLightbox({
                       images: [
-                        { src: `${IMG_BASE}/03-aa-new-wireframe-desktop.png`, alt: 'Unified desktop wireframe.', title: 'Before' },
-                        { src: `${IMG_BASE}/03-aa-new-wireframe-mobile.png`, alt: 'Unified mobile wireframe.', title: 'After' },
+                        { src: `${IMG_BASE}/03-aa-new-wireframe-desktop.png`, alt: 'Unified desktop wireframe.', title: 'Desktop' },
+                        { src: `${IMG_BASE}/03-aa-new-wireframe-mobile.png`, alt: 'Unified mobile wireframe.', title: 'Mobile' },
                       ],
                       initialIndex: 0,
                     })
@@ -283,8 +281,8 @@ export default function AmericanAirlinesCaseStudy() {
                   onAfterClick={() =>
                     setLightbox({
                       images: [
-                        { src: `${IMG_BASE}/03-aa-new-wireframe-desktop.png`, alt: 'Unified desktop wireframe.', title: 'Before' },
-                        { src: `${IMG_BASE}/03-aa-new-wireframe-mobile.png`, alt: 'Unified mobile wireframe.', title: 'After' },
+                        { src: `${IMG_BASE}/03-aa-new-wireframe-desktop.png`, alt: 'Unified desktop wireframe.', title: 'Desktop' },
+                        { src: `${IMG_BASE}/03-aa-new-wireframe-mobile.png`, alt: 'Unified mobile wireframe.', title: 'Mobile' },
                       ],
                       initialIndex: 1,
                     })
@@ -294,9 +292,9 @@ export default function AmericanAirlinesCaseStudy() {
 
                 {/* Unified Brand */}
                 <div>
-                  <h3 className="font-medium mb-3">Unified Brand</h3>
+                  <h3 className="font-medium mb-3">Unified Experience</h3>
                   <p className="text-sm text-muted-foreground mb-4 w-full">
-                    Standardized navigation, UI patterns, and reusable components established a single
+                    Standardized navigation, page hierarchy, and interaction patterns established a single
                     experience foundation post-merger.
                   </p>
                   <div>
@@ -307,7 +305,7 @@ export default function AmericanAirlinesCaseStudy() {
                       className="relative group cursor-pointer overflow-hidden rounded-2xl"
                       onClick={() =>
                       setLightbox({
-                        images: [{ src: `${IMG_BASE}/04-aa-new-after.png`, alt: 'Unified American Airlines (After).', title: 'Unified Brand' }],
+                        images: [{ src: `${IMG_BASE}/04-aa-new-after.png`, alt: 'Unified American Airlines (After).', title: 'Unified Experience' }],
                         initialIndex: 0,
                       })
                     }
@@ -315,7 +313,7 @@ export default function AmericanAirlinesCaseStudy() {
                       if (e.key === 'Enter' || e.key === ' ') {
                         e.preventDefault();
                         setLightbox({
-                          images: [{ src: `${IMG_BASE}/04-aa-new-after.png`, alt: 'Unified American Airlines (After).', title: 'Unified Brand' }],
+                          images: [{ src: `${IMG_BASE}/04-aa-new-after.png`, alt: 'Unified American Airlines (After).', title: 'Unified Experience' }],
                           initialIndex: 0,
                         });
                       }
@@ -348,8 +346,8 @@ export default function AmericanAirlinesCaseStudy() {
                 <div>
                   <h3 className="font-medium mb-3">Performance After Improvement</h3>
                   <p className="text-sm text-muted-foreground mb-4 w-full">
-                    Illustrative report showing improved stability and core vitals after front-end
-                    modernization.
+                    Illustrative report showing improved stability and core vitals after
+                    IA-driven restructuring and front-end modernization.
                   </p>
                   <div>
                     <div className="text-sm font-medium mb-3 text-muted-foreground">
@@ -408,12 +406,12 @@ export default function AmericanAirlinesCaseStudy() {
 
             {/* 4) What Changed */}
             <section>
-              <h2 className="text-2xl font-medium mb-6 w-full max-w-none">What Changed</h2>
+              <h2 className="text-2xl font-medium mb-6 w-full max-w-none">What I Changed</h2>
               <div className="bg-card border border-border rounded-2xl p-8">
                 <ul className="space-y-3">
                   {whatChanged.map((change, i) => (
                     <li key={i} className="flex gap-3">
-                      <span className="text-primary mt-1">✓</span>
+                      <span className="text-primary mt-1">&#10003;</span>
                       <span>{change}</span>
                     </li>
                   ))}
@@ -423,15 +421,14 @@ export default function AmericanAirlinesCaseStudy() {
 
             {/* 5) Results & Next Steps */}
             <section>
-              <h2 className="text-2xl font-medium mb-6 w-full max-w-none">Results & Next Steps</h2>
+              <h2 className="text-2xl font-medium mb-6 w-full max-w-none">Results</h2>
               <div className="bg-card border border-border rounded-2xl p-8">
                 <h3 className="font-medium mb-3">Impact</h3>
                 <p className="text-muted-foreground">
-                  Unified post-merger journeys into more continuous, consistent experiences - users no
-                  longer start in one system and finish in another. Platform patterns are more
-                  maintainable and standardized. Reduced regression risk through shared components,
-                  consistent state handling, and stronger automated test coverage for critical
-                  booking and account flows.
+                  Unified post-merger journeys into continuous, consistent experiences&mdash;users no
+                  longer start in one system and finish in another. IA patterns and navigation
+                  conventions became the shared foundation for scalable, maintainable delivery
+                  across teams.
                 </p>
               </div>
             </section>

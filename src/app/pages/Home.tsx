@@ -1,13 +1,12 @@
 import { Link, useLocation } from 'react-router';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 import { Container } from '../components/Container';
 import { ProjectCard } from '../components/ProjectCard';
 import { WhatIDoSection } from '../components/sections/WhatIDoSection';
 import { ProofOfImpact } from '../components/ProofOfImpact';
-import { BeforeAfterModal, AnnotationPin } from '../components/BeforeAfterModal';
 import { Button } from '../components/ui/button';
 import { selectedWork, personalWork as personalWorkData, getDisplayChips } from '../data/workProjects';
-import React, { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 export default function Home() {
   const location = useLocation();
@@ -30,19 +29,6 @@ export default function Home() {
       });
     }
   }, [location.pathname, location.hash]);
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedComparison, setSelectedComparison] = useState<{
-    title: string;
-    before: string;
-    after: string;
-    beforeSrc?: string;
-    afterSrc?: string;
-    beforeAlt?: string;
-    afterAlt?: string;
-    annotations: AnnotationPin[];
-    caseStudyHref?: string;
-  } | null>(null);
-
   const proofChips = [
     'UX Strategy',
     'Product Design',
@@ -55,54 +41,12 @@ export default function Home() {
   ];
 
   const credibilityStrip = [
+    'Jillamy, Inc.',
     'Ulta Beauty',
-    'CVS Health',
+    'Tractor Supply Co.',
+    'CVS Health / Aetna',
     'American Airlines',
-    'Cox Automotive',
-    'General Electric',
   ];
-
-  // Example annotations for Before/After modal
-  const ultaAnnotations: AnnotationPin[] = [
-    { x: 25, y: 35, label: 'Checkout Flow', caption: 'Clearer entry and hierarchy for faster scanning' },
-    { x: 60, y: 45, label: 'Loyalty Integration', caption: 'Seamless points visibility' },
-    { x: 80, y: 55, label: 'Mobile UX', caption: 'Touch-optimized interactions' },
-  ];
-
-  const aaAnnotations: AnnotationPin[] = [
-    { x: 30, y: 40, label: 'API Performance', caption: 'Improved reliability and graceful degradation' },
-    { x: 55, y: 50, label: 'Error Handling', caption: 'Graceful degradation patterns' },
-    { x: 75, y: 30, label: 'Booking Flow', caption: 'Streamlined user journey' },
-  ];
-
-  const handleBeforeAfterClick = (projectTitle: string) => {
-    const project = selectedWork.find((p) => p.title === projectTitle);
-    let annotations: AnnotationPin[] = [];
-    let caseStudyHref = '';
-    
-    if (projectTitle.includes('Ulta')) {
-      annotations = ultaAnnotations;
-      caseStudyHref = '/work/ulta';
-    } else if (projectTitle.includes('CVS')) {
-      caseStudyHref = '/work/cvs';
-    } else if (projectTitle.includes('American')) {
-      annotations = aaAnnotations;
-      caseStudyHref = '/work/american-airlines';
-    }
-
-    setSelectedComparison({
-      title: projectTitle,
-      before: `${projectTitle} - Before`,
-      after: `${projectTitle} - After`,
-      beforeSrc: '/images/placeholders/before.svg',
-      afterSrc: '/images/placeholders/after.svg',
-      beforeAlt: `${projectTitle} before state`,
-      afterAlt: `${projectTitle} after state`,
-      annotations,
-      caseStudyHref,
-    });
-    setModalOpen(true);
-  };
 
   const personalWork = personalWorkData;
 
@@ -130,7 +74,7 @@ export default function Home() {
     {
       phase: 'Ship',
       description:
-        'Architect, build, and support delivery with monitoring, iteration, and documentation.',
+        'Support delivery with monitoring, iteration, and documentation.',
     },
   ];
 
@@ -143,13 +87,13 @@ export default function Home() {
             {/* Left: Content */}
             <div className="lg:col-span-7 flex flex-col">
               <h1 className="text-3xl md:text-4xl font-medium mb-3 md:mb-4 leading-tight max-w-[24ch]">
-                Senior Product Designer (UX/UI)
+                Senior Product Designer (UX)
               </h1>
               <p className="text-base font-medium text-foreground/80 mb-5">
-                Design Systems • Accessibility • Service-first UX
+                Design Systems &bull; Accessibility (WCAG 2.1) &bull; Analytics-informed Iteration &bull; Implementation-aware Delivery
               </p>
               <p className="text-lg text-muted-foreground mb-7 max-w-[60ch]">
-                I help teams ship accessible products with confidence-aligning user needs, business goals, and engineering constraints. From discovery through design systems and QA-ready acceptance criteria, I reduce ambiguity and speed up delivery; I'm also React/TypeScript fluent to strengthen handoffs and implementation quality.
+                I help teams ship accessible products with confidence&mdash;aligning user needs, business goals, and engineering constraints. From discovery through design systems and QA-ready acceptance criteria, I reduce ambiguity and speed up delivery.
               </p>
 
               {/* Credibility Strip */}
@@ -160,7 +104,7 @@ export default function Home() {
                     <span key={company} className="flex items-center gap-3">
                       <span className="text-sm font-medium">{company}</span>
                       {i < credibilityStrip.length - 1 && (
-                        <span className="text-muted-foreground">•</span>
+                        <span className="text-muted-foreground">&bull;</span>
                       )}
                     </span>
                   ))}
@@ -173,11 +117,11 @@ export default function Home() {
                     View Case Studies <ArrowRight className="w-4 h-4" />
                   </Button>
                 </Link>
-                <Link to="/contact">
-                  <Button size="lg" variant="secondary" className="gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
-                    Let's Talk <ArrowRight className="w-4 h-4" />
-                  </Button>
-                </Link>
+                <Button size="lg" variant="secondary" className="gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" asChild>
+                  <a href="/Joel-Premier-Resume.pdf" download="Joel-Premier-Resume.pdf">
+                    <Download className="w-4 h-4" /> Download Resume
+                  </a>
+                </Button>
               </div>
 
               <div className="flex flex-wrap gap-2 max-w-[68ch]">
@@ -209,10 +153,10 @@ export default function Home() {
             <div className="flex items-baseline justify-between gap-4 mb-2">
               <h2 className="text-3xl font-medium">Selected Work</h2>
               <Link to="/work" className="hidden md:inline-block text-primary hover:underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded shrink-0">
-                View all work →
+                View all work &rarr;
               </Link>
             </div>
-            <p className="text-muted-foreground">Selected case studies showcasing product impact, measurable outcomes, and end-to-end delivery</p>
+            <p className="text-muted-foreground">Selected case studies showcasing product impact, measurable outcomes, and end-to-end design delivery</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -233,40 +177,22 @@ export default function Home() {
 
           <div className="mt-8 text-center md:hidden">
             <Link to="/work" className="text-primary hover:underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded">
-              View all work →
+              View all work &rarr;
             </Link>
           </div>
         </Container>
       </section>
 
-      {/* Before/After Modal */}
-      {selectedComparison && (
-        <BeforeAfterModal
-          open={modalOpen}
-          onOpenChange={setModalOpen}
-          title={selectedComparison.title}
-          beforePlaceholder={selectedComparison.before}
-          afterPlaceholder={selectedComparison.after}
-          beforeSrc={selectedComparison.beforeSrc}
-          afterSrc={selectedComparison.afterSrc}
-          beforeAlt={selectedComparison.beforeAlt}
-          afterAlt={selectedComparison.afterAlt}
-          annotations={selectedComparison.annotations}
-          caseStudyHref={selectedComparison.caseStudyHref}
-        />
-      )}
-
       {/* Services */}
       <WhatIDoSection className="py-16" />
 
-      {/* How I Design & Build */}
+      {/* How I Work */}
       <section className="py-16 bg-muted/30">
         <Container>
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-medium mb-2">How I Design & Build</h2>
+            <h2 className="text-3xl font-medium mb-2">How I Work</h2>
             <p className="text-muted-foreground">
-              A structured approach to product delivery - from UX discovery to scalable full-stack
-              implementation.
+              A structured approach to product delivery&mdash;from UX discovery to implementation-ready handoff.
             </p>
           </div>
 
@@ -326,15 +252,22 @@ export default function Home() {
       <section className="py-16 bg-primary text-primary-foreground">
         <Container>
           <div className="text-center max-w-2xl mx-auto">
-            <h2 className="text-3xl font-medium mb-4">Let's build what customers actually use.</h2>
-            <p className="text-lg mb-8 opacity-90 whitespace-nowrap">
+            <h2 className="text-3xl font-medium mb-4">Let&rsquo;s design what customers actually use.</h2>
+            <p className="text-lg mb-8 opacity-90">
               Senior IC/Lead roles and consulting engagements focused on measurable outcomes.
             </p>
-            <Link to="/contact">
-              <Button size="lg" variant="secondary" className="gap-2 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
-                Let's Talk <ArrowRight className="w-4 h-4" />
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link to="/contact">
+                <Button size="lg" variant="secondary" className="gap-2 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
+                  Let&rsquo;s Talk <ArrowRight className="w-4 h-4" />
+                </Button>
+              </Link>
+              <Button size="lg" variant="outline" className="gap-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <a href="/Joel-Premier-Resume.pdf" download="Joel-Premier-Resume.pdf">
+                  <Download className="w-4 h-4" /> Download Resume
+                </a>
               </Button>
-            </Link>
+            </div>
           </div>
         </Container>
       </section>

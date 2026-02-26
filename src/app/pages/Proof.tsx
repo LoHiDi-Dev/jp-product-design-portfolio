@@ -129,15 +129,15 @@ export default function Proof() {
       <Container>
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-3xl md:text-4xl font-medium mb-4">Proof</h1>
+          <h1 className="text-3xl md:text-4xl font-medium mb-4">Artifacts</h1>
           <p className="text-lg text-muted-foreground w-full leading-relaxed">
-            Artifacts that show how I design, validate, and ship-covering implementation credibility, production readiness, and accessibility.
+            Artifacts that show how I design, validate, and ship&mdash;covering design delivery, production readiness, and accessibility.
           </p>
         </div>
 
         {/* Engineering Proof */}
         <section className="mb-16">
-          <h2 className="text-2xl font-medium mb-6">Engineering Proof</h2>
+          <h2 className="text-2xl font-medium mb-6">Design &amp; Implementation Artifacts</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {engineeringProof.map((item) => (
               <div key={item.title} className="bg-card border border-border rounded-2xl p-6">

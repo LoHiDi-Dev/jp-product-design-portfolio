@@ -73,7 +73,7 @@ export default function About() {
             <div>
               <h1 className="text-3xl md:text-4xl font-medium mb-2">Joel Stefano Premier</h1>
               <p className="text-xl font-medium text-foreground/90 mb-1">
-                Senior Product Designer (UX/UI)
+                Senior Product Designer (UX)
               </p>
               <p className="text-base text-muted-foreground">
                 Design Systems • Accessibility • Service-first UX
@@ -124,7 +124,7 @@ export default function About() {
             <h2 className="text-2xl font-medium">Background</h2>
             <div className="space-y-4 w-full">
               <p className="text-muted-foreground w-full leading-relaxed">
-                I started in full-stack web development before moving into product UX design. That hybrid foundation helps me bridge strategy, design, and engineering so teams can ship with confidence.
+                I started in web development before moving into product UX design. That technical foundation helps me bridge strategy, design, and engineering so teams can ship with confidence.
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1.5 w-full text-sm">
                 <li>Bridge strategy, design, and engineering in a workflow-driven UX approach.</li>

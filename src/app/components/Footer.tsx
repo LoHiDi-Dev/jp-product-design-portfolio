@@ -19,10 +19,9 @@ export function Footer() {
               <img src="/logo.png" alt="" className="h-10 w-10 rounded-md object-contain shrink-0" />
               <span>Joel Stefano Premier</span>
             </Link>
-            <div className="text-sm text-muted-foreground space-y-0.5">
-              <p>Senior Product Designer</p>
-              <p>Full-Stack Engineer</p>
-            </div>
+            <p className="text-sm text-muted-foreground">
+              Senior Product Designer (UX) &bull; Design Systems &bull; Accessibility (WCAG 2.1) &bull; Implementation-aware
+            </p>
           </div>
 
           {/* Navigation */}
@@ -43,14 +42,14 @@ export function Footer() {
             <h4 className="font-medium mb-4 text-sm">Resources</h4>
             <div className="flex flex-col gap-3">
               <Link to="/proof" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                Proof
+                Artifacts
               </Link>
               <a
                 href="/Joel-Premier-Resume.pdf"
                 download="Joel-Premier-Resume.pdf"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
               >
-                Download resume
+                Download Resume
               </a>
             </div>
           </div>
@@ -77,10 +76,7 @@ export function Footer() {
 
         <div className="mt-8 pt-6 pb-1 border-t border-border text-center space-y-1">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Joel Stefano Premier. All rights reserved.
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Designed & developed with ❤️ in Dallas, Texas 🇺🇸.
+            &copy; {currentYear} Joel Stefano Premier. All rights reserved.
           </p>
         </div>
       </Container>

@@ -55,15 +55,28 @@ export default function JIMCaseStudy() {
             <span className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full">
               Current Project
             </span>
-            <span className="text-sm text-muted-foreground">Nov 2025 - Present</span>
+            <span className="text-sm text-muted-foreground">Nov 2025 &ndash; Present</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-medium mb-4">
-            JIM (Jillamy Inventory and Ops Portal)
+            Jillamy, Inc. &mdash; JIM (Inventory &amp; Ops Portal)
           </h1>
           <p className="text-xl text-muted-foreground">
-            UX Product Designer & Full-Stack Software Engineer
+            In-House Senior Product Designer (UX) | UI Development (React/TypeScript)
           </p>
         </div>
+
+        {/* Executive Snapshot */}
+        <section className="mb-12 bg-muted/30 border border-border rounded-2xl p-8">
+          <h2 className="text-lg font-medium mb-4">Executive Snapshot</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+            <div><span className="font-medium text-primary">Role:</span> In-House Senior Product Designer (UX) | UI Development</div>
+            <div><span className="font-medium text-primary">Platform:</span> Web (React/TypeScript)</div>
+            <div><span className="font-medium text-primary">Scope:</span> End-to-end: discovery, UX design, architecture, development, QA</div>
+            <div><span className="font-medium text-primary">Team:</span> Solo IC (design + implementation), warehouse stakeholders</div>
+            <div className="md:col-span-2 lg:col-span-3"><span className="font-medium text-primary">Problem:</span> Multiple warehouses needed standardized inventory workflows with clear operator feedback and prevention-focused guardrails.</div>
+            <div className="md:col-span-2 lg:col-span-3"><span className="font-medium text-primary">Outcomes:</span> Standardized workflows across warehouses, improved operator speed and accountability, role-based experiences with protected routes.</div>
+          </div>
+        </section>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
@@ -179,12 +192,12 @@ export default function JIMCaseStudy() {
               </div>
             </section>
 
-            {/* Engineering Proof - ENHANCED */}
+            {/* Implementation Evidence */}
             <section>
-              <h2 className="text-2xl font-medium mb-6">Engineering Proof</h2>
+              <h2 className="text-2xl font-medium mb-6">Implementation Evidence</h2>
               <p className="text-muted-foreground mb-8">
-                Full-stack implementation demonstrating production-ready code architecture, 
-                scalable patterns, and systems thinking across the entire stack.
+                Design-led implementation demonstrating production-ready UI architecture,
+                accessible patterns, and systems thinking&mdash;owned end-to-end from UX through code.
               </p>
               
               <div className="grid grid-cols-1 gap-6">

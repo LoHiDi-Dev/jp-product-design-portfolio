@@ -65,7 +65,7 @@ export default function QaChecklist() {
             className="inline-flex items-center gap-2 text-sm text-foreground/90 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
           >
             <ArrowLeft className="w-4 h-4" aria-hidden />
-            Back to Proof
+            Back to Artifacts
           </Link>
         </div>
 

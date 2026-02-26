@@ -30,9 +30,9 @@ export function getDisplayChips(project: WorkProject): string[] {
 /** Selected Work - same projects as homepage */
 export const selectedWork: WorkProject[] = [
   {
-    title: 'Ulta Beauty E-commerce & Loyalty',
-    role: 'Senior Product Designer / UX Architect',
-    timeline: 'Oct 2022 - Sep 2025',
+    title: 'Ulta Beauty — E-commerce & Loyalty',
+    role: 'Senior Product Designer',
+    timeline: 'Oct 2022 – Sep 2025',
     outcome:
       'Reduced friction and lifted conversion by refining checkout and loyalty flows through analytics-informed UX iterations.',
     taxonomy: {
@@ -46,9 +46,9 @@ export const selectedWork: WorkProject[] = [
     imageAlt: 'Ulta case study thumbnail',
   },
   {
-    title: 'CVS Medicare Digital Experience',
-    role: 'Senior Product Designer / UX Strategist',
-    timeline: 'Mar 2019 - Jul 2022',
+    title: 'CVS Health / Aetna — Medicare Digital Experience',
+    role: 'Senior UX Strategist / Product Designer (Medicare)',
+    timeline: 'Oct 2019 – Jul 2021',
     outcome:
       'Improved Medicare member journeys using service blueprinting and UX strategy to simplify complex, regulated flows.',
     taxonomy: {
@@ -62,16 +62,16 @@ export const selectedWork: WorkProject[] = [
     imageAlt: 'CVS case study thumbnail',
   },
   {
-    title: 'American Airlines Digital Journeys',
-    role: 'Senior Software Engineer / User Interface',
-    timeline: 'Feb 2013 - Dec 2018',
+    title: 'American Airlines — Digital Journeys',
+    role: 'Senior Information Architect (UX) / Information Designer',
+    timeline: 'Feb 2014 – Aug 2019',
     outcome:
-      'Modernized high-traffic journeys by shipping scalable UI improvements and strengthening API integration reliability.',
+      'Led IA unification of post-merger digital journeys (US Airways → American Airlines), delivering flows, wireframes, and interaction specs that aligned UX, engineering, and brand.',
     taxonomy: {
-      role: 'Engineering',
+      role: 'UX Strategy',
       domain: 'Travel / Transportation',
       platform: 'Web',
-      methods: ['Testing / QA', 'Analytics'],
+      methods: ['IA / Navigation', 'Research', 'Accessibility'],
     },
     href: '/work/american-airlines',
     imageSrc: '/images/aa-thumbnail.png',
@@ -82,7 +82,7 @@ export const selectedWork: WorkProject[] = [
 /** Personal Work */
 export const personalWork: WorkProject[] = [
   {
-    title: 'St. Jude - Navigation Exploration',
+    title: 'St. Jude — Navigation Exploration',
     role: '',
     timeline: 'Dec 2025',
     outcome:
@@ -100,11 +100,11 @@ export const personalWork: WorkProject[] = [
     imageAlt: "St. Jude Children's Research Hospital.",
   },
   {
-    title: 'Reno, TX - Brand + Redesign',
+    title: 'Reno, TX — Brand + Redesign',
     role: '',
     timeline: 'Feb 2026',
     outcome:
-      'Approved logo refresh + early homepage redesign for Reno, TX - focused on clearer navigation, faster service access, and better prioritization of top actions.',
+      'Approved logo refresh + early homepage redesign for Reno, TX — focused on clearer navigation, faster service access, and better prioritization of top actions.',
     taxonomy: {
       role: 'Design Systems',
       domain: 'Government / Civic',

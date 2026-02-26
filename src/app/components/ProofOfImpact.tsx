@@ -62,7 +62,7 @@ export function ProofOfImpact() {
   return (
     <div className="space-y-4">
       <div>
-        <h2 className="text-xl font-medium mb-2">Proof of Impact</h2>
+        <h2 className="text-xl font-medium mb-2">Design Impact</h2>
         <p className="text-sm text-muted-foreground">
           See measurable design improvements
         </p>
